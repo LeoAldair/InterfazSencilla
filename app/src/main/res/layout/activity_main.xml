@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textMedia"
+        android:layout_width="309dp"
+        android:layout_height="32dp"
+        android:text="Media Volume"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarMedia"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintLeft_toRightOf="@+id/iconMedia"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAlarm"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:text="Alarm Volume"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/seekBarAlarm"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toRightOf="@+id/iconAlarm"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarMedia" />
+
+    <TextView
+        android:id="@+id/textRing"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:text="Ring Volume"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/seekBarRing"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintLeft_toRightOf="@+id/iconRing"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarAlarm" />
+
+    <TextView
+        android:id="@+id/doNotDisturb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do Not Disturb"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@id/doNotDisturbName"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+    <TextView
+        android:id="@+id/doNotDisturbName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Rules"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doNotDisturb" />
+
+    <TextView
+        android:id="@+id/phoneRigtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone rigtone"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/phoneRigtoneName"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/phoneRigtoneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="crackle"
+        app:layout_constraintBottom_toTopOf="@id/defaultNotification"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneRigtone" />
+
+    <TextView
+        android:id="@+id/defaultNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default notification sound"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/defaultNotificationName"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneRigtoneName" />
+
+    <TextView
+        android:id="@+id/defaultNotificationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popcorn"
+        app:layout_constraintBottom_toTopOf="@id/defaultAlarm"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/defaultNotification" />
+
+    <TextView
+        android:id="@+id/defaultAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default alarm sound"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/defaultAlarmName"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/defaultNotificationName" />
+
+    <TextView
+        android:id="@+id/defaultAlarmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bright morning"
+        app:layout_constraintBottom_toTopOf="@id/divider3"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/defaultAlarm" />
+
+    <TextView
+        android:id="@+id/textOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other sounds and vibrations"
+        android:textColor="@color/teal_200"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="320dp"
+        android:layout_height="49dp"
+        android:text="Also vibrate for calls"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/divider1"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarRing" />
+
+    <SeekBar
+        android:id="@+id/seekBarMedia"
+        android:layout_width="331dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/textAlarm"
+        app:layout_constraintLeft_toRightOf="@id/iconMedia"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMedia" />
+
+    <SeekBar
+        android:id="@+id/seekBarAlarm"
+        android:layout_width="331dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/textRing"
+        app:layout_constraintLeft_toRightOf="@id/iconAlarm"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAlarm" />
+
+    <SeekBar
+        android:id="@+id/seekBarRing"
+        android:layout_width="331dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toTopOf="@id/switch1"
+        app:layout_constraintLeft_toRightOf="@id/iconRing"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRing" />
+
+    <ImageView
+        android:id="@+id/iconMedia"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintBottom_toTopOf="@id/iconAlarm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/seekBarMedia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music_icon" />
+
+    <ImageView
+        android:id="@+id/iconAlarm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@id/iconRing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/seekBarAlarm"
+        app:layout_constraintTop_toBottomOf="@id/iconMedia"
+        app:srcCompat="@drawable/alarm_icon" />
+
+    <ImageView
+        android:id="@+id/iconRing"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/seekBarRing"
+        app:layout_constraintTop_toBottomOf="@id/iconAlarm"
+        app:srcCompat="@drawable/ring_icon" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch1" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@id/phoneRigtone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@id/textOther"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/defaultAlarmName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
